@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/frem/Courses/c-basics-hw/HW 2/Task 1/main'
+relocations:     []
+...
