@@ -36,6 +36,16 @@ void print_array(int **array, int size)
     }
 }
 
+void free_array(int **array, int size)
+{
+    for(int i = 0; i<size; i++)
+    {
+        free(array[i]);
+    }
+
+    free(array);
+}
+
 int **add_arrays(int **array_1, int **array_2, int *size)
 {
     int **array = malloc(*size * sizeof(int *));
@@ -53,16 +63,6 @@ int **add_arrays(int **array_1, int **array_2, int *size)
         }
     }
     return array;
-}
-
-void free_array(int **array, int size)
-{
-    for(int i = 0; i<size; i++)
-    {
-        free(array[i]);
-    }
-
-    free(array);
 }
 
 int main()
