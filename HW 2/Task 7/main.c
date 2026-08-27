@@ -4,6 +4,8 @@
 
 int main()
 {
+    srand(time(NULL));
+
     int a, b = 0;
     int max = 1000;
 
